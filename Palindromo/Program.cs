@@ -20,12 +20,14 @@ public class Palindromo
     }
     public static bool EsPalindromo(string textoOriginal)
     {
+        string textoSinEspacios = textoOriginal.Replace(" ", "");
+
         int izquierda = 0;
-        int derecha = textoOriginal.Length - 1;
+        int derecha = textoSinEspacios.Length - 1;
 
         while (izquierda < derecha)
         {
-            if (textoOriginal[izquierda] != textoOriginal[derecha])
+            if (textoSinEspacios[izquierda] != textoSinEspacios[derecha])
             {
                 return false;
             }
@@ -39,3 +41,5 @@ public class Palindromo
 // tengo que decir que me parecio algo bastante bueno, y gracias al ultimo trabajo que hizo el profe, pude hacer la variable "derecha", ya que no sabia como hacer para arrancar desde la derecha  o desde la ultima letra 
 // de la palabra que ingresaba el usuario, no estuvo mal, estuve leyendo los otros dos desafios y el tercero no tengo idea como podre hacerlo, voy a buscar informacion e intentare hacerlo.
 // aaa por cierto, si el usuario ingresa una mayúscula al principio de la palabra no lo toma como iguales, en ese caso tendria que hacer otra cosa, pero bueno andar anda, y con espacios tampoco funciona.
+// ahora, lo que hice fue preguntar como hacer para verificar los espacios en respuesta la IA me dio este codigo " string textoSinEspacios = textoOriginal.Replace(" ", "");"... que lo que hace es eliminar los espacios 
+// y juntar las frases en una palabra, ahora si puede verificar con los espacios, 
