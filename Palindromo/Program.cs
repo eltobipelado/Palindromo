@@ -38,3 +38,4 @@ public class Palindromo
 }
 // tengo que decir que me parecio algo bastante bueno, y gracias al ultimo trabajo que hizo el profe, pude hacer la variable "derecha", ya que no sabia como hacer para arrancar desde la derecha  o desde la ultima letra 
 // de la palabra que ingresaba el usuario, no estuvo mal, estuve leyendo los otros dos desafios y el tercero no tengo idea como podre hacerlo, voy a buscar informacion e intentare hacerlo.
+// aaa por cierto, si el usuario ingresa una mayúscula al principio de la palabra no lo toma como iguales, en ese caso tendria que hacer otra cosa, pero bueno andar anda, y con espacios tampoco funciona.
